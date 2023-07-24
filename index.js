@@ -145,7 +145,7 @@ app.get("/about_project", (req, res) => {
     res.render("about_project_page")
 })
 
-app.listen(process.env.PORT, (error) => {
+app.listen(3000, (error) => {
     if (error) {
         console.log(error)
     } else {

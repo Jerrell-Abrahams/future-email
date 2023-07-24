@@ -23,8 +23,8 @@ const config = {
     port: 587,
     secure: false,
     auth: {
-        user: "jerrellabrahams50@gmail.com",
-        pass: "acwuxmxtcjizmyfp"
+        user: "futureemailee@gmail.com",
+        pass: "wrchaqpuvziauczj"
     }
 }
 

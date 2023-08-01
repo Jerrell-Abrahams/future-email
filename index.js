@@ -41,7 +41,7 @@ const send = (data) => {
 
 
 
-const job = schedule.scheduleJob('00 00 00 * * *', async () => {
+const job = schedule.scheduleJob('0 1 * * * *', async () => {
     const connection =  mongoose.model("Person", newSchema, "Person")
     const current_date = new Date().toLocaleDateString("en-GB")
     const query = await connection.find({})

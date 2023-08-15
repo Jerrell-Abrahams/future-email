@@ -91,11 +91,6 @@ const newSchema = new Schema({
 ConnectDb()
 
 
-
-
-
-
-
 app.get("/", async function (req, res) {
     const connection = mongoose.model("Person", newSchema, "Person")
     const allEmails = await connection.find({privacy: "public"})

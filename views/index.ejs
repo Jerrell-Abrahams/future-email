@@ -1,160 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,200&display=swap" rel="stylesheet">
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100&display=swap" rel="stylesheet">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Future Email</title>
-    <link rel="icon" sizes="500x500" href="https://img.icons8.com/clouds/500/gmail-new.png"/>
-
-</head>
-<body>
+    <link
+      rel="icon"
+      sizes="500x500"
+      href="https://img.icons8.com/clouds/500/gmail-new.png"
+    />
+  </head>
+  <body>
     <section class="main">
-        <div class="main_title">
-            <h2 class="main_title_sub_heading"><span class="cursive">Write</span> <span class="small_text">a</span> <span class="email_word">Email</span>  <span class="small_text">to your</span></h2>
-            <h1 class="main_title_heading">Future Self.</h1>
-            <h3 class="slogan">Send your memories of tomorrow</h3>
-        </div>
-            <div>
-            <div class="wave"></div>
-            <div class="wave"></div>               
-            <div class="wave"></div>
+      <div class="main_title">
+        <h2 class="main_title_sub_heading">
+          <span class="cursive">Write</span> <span class="small_text">a</span>
+          <span class="email_word">Email</span>
+          <span class="small_text">to your</span>
+        </h2>
+        <h1 class="main_title_heading">Future Self.</h1>
+        <h3 class="slogan">Send your memories of tomorrow</h3>
+      </div>
+      <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+
+      <div class="letter_container">
+        <form action="" method="post">
+          <div class="letter_content">
+            <textarea
+              required
+              class="textarea"
+              rows="10"
+              columns="20"
+              placeholder="Dear Future Me, "
+              name="letterContent"
+            ></textarea>
+            <div class="time_container">
+              <h2 class="deliver_time_heading">Deliver in</h2>
+              <div class="button_container">
+                <button
+                  class="time_buttons selected"
+                  type="button"
+                  value="6"
+                  type="radio"
+                >
+                  6 Months
+                </button>
+                <button class="time_buttons" type="button" value="12">
+                  1 Year
+                </button>
+                <button class="time_buttons" type="button" value="36">
+                  3 Years
+                </button>
+                <button class="time_buttons" type="button" value="60">
+                  5 Years
+                </button>
+                <input type="date" name="date" class="date" />
+              </div>
+            </div>
+            <div></div>
+            <h2 class="private_heading">Audience</h2>
+            <div class="toggle_container">
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  class="privacy_toggle"
+                  value="public"
+                  onclick="myFunction()"
+                  name="privacy_toggle"
+                />
+
+                <span class="slider round"></span>
+              </label>
+              <h4
+                class="privacy_label"
+                title="Anyone can see your letter, but it remains anonymous"
+              >
+                Public, but anonymous
+              </h4>
             </div>
 
-            <div class="letter_container">
-                <form action="" method="post">
-                <div class="letter_content">
-                    <textarea required class="textarea" rows="10" columns="20" placeholder="Dear Future Me, " name="letterContent"></textarea>
-                    <div class="time_container">
-                    <h2 class="deliver_time_heading">Deliver in</h2>
-                    <div class="button_container">
-                        <button class="time_buttons selected" type="button"  value="6" type="radio">6 Months</button>
-                        <button class="time_buttons" type="button"  value="12">1 Year</button>
-                        <button class="time_buttons" type="button"  value="36">3 Years</button>
-                        <button class="time_buttons" type="button"  value="60">5 Years</button>
-                        <input type="date" name="date" class="date">
-                    </div>
-                </div>
-                <div>
-                </div>
-                <h2 class="private_heading">Audience</h2>
-                <div class="toggle_container">
-                <label class="switch">
-                    <input type="checkbox" class="privacy_toggle" value="public" onclick="myFunction()" name="privacy_toggle">
-
-                    <span class="slider round"></span>
-                  </label>
-                  <h4 class="privacy_label" title="Anyone can see your letter, but it remains anonymous">Public, but anonymous</h4>
-                </div>
-
-                <h2 class="email_label">Email</h2>
-                    <div class="email_container">
-                            <!-- <ion-icon name="mail-outline"></ion-icon> -->
-                            <input type="email" required placeholder="example@co.za" name="email"/> 
-                    </div>
-                    <div class="submit_button_container">
-                       <button class="submit_button" type="submit" name="number_of_years" value="6">Send letter to Future!</button>
-                    </div>
-                   
-                </div>
-            </form>
+            <h2 class="email_label">Email</h2>
+            <div class="email_container">
+              <!-- <ion-icon name="mail-outline"></ion-icon> -->
+              <input
+                type="email"
+                required
+                placeholder="example@co.za"
+                name="email"
+              />
             </div>
+            <div class="submit_button_container">
+              <button
+                class="submit_button"
+                type="submit"
+                name="number_of_years"
+                value="6"
+              >
+                Send letter to Future!
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
     <section>
-        <div class="middle_section">
-            <div>
-                <h1>Future letters are great for:</h1>
-                <div class="reasons">
-                <p>❤️ <strong>Reliving memories</strong> in vivid detail</p>
-                <p>📈 Acknowledging growth & achievements</p>
-                <p>✅ <strong>Setting goals</strong> for the future</p>
-                <p>😌 <strong>Decluttering your mind</strong> to find some headspace</p>
-            </div>
-            </div>
+      <div class="middle_section">
+        <div>
+          <h1>Future letters are great for:</h1>
+          <div class="reasons">
+            <p>❤️ <strong>Reliving memories</strong> in vivid detail</p>
+            <p>📈 Acknowledging growth & achievements</p>
+            <p>✅ <strong>Setting goals</strong> for the future</p>
+            <p>
+              😌 <strong>Decluttering your mind</strong> to find some headspace
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="carousel_container">
-
-        <div>
+      <div>
         <h1 class="carousel_heading">Read other future emails</h1>
         <div class="slideshow-container">
-            
+          <% for( let index = 0; index < data.length; index++ ) { %>
 
-            <% for( let index = 0; index < data.length; index++ ) { %>
-            
-            <div class="mySlides fade">
-                
-              <div class="text">
-                <div>   
-                    <p class="emailContent"><%= data[index].emailContent %></p>
-                    <p class="author">- Anonymous</p>
-                </div>
+          <div class="mySlides fade">
+            <div class="text">
+              <div>
+                <p class="emailContent"><%= data[index].emailContent %></p>
+                <p class="author">- Anonymous</p>
               </div>
             </div>
-            <% } %>
-          
-          
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
+          <% } %>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-          <br>
-          
-          <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
+      </div>
+      <br />
 
-
-        </section>
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
     <section class="about_container">
-        <div class="about_section">
-            <div class="left_side">
-                <img src="/images/email_illustration.jpg" alt="">
-            </div>
-            <div class="right_side">
-                <h1 class="about_heading">About</h1>
-                <p>Writing a letter to your future self can be a great way to look back on how your life has changed and find out if you're achieving the goals you set for yourself.</p>
-                <div class="buttons">
-                    <a href="https://www.buymeacoffee.com/jerrellabrahams"><button class="donate_button">☕ Buy me a coffee</button></a>
-                    <a href="mailto:jerrellabrahams50@gmail.com"><button class="contact_button">Contact Us</button></a>
-                </div>
-                <img class="stripe_badge" src="/images/stripe.svg"/>
-                <div class="quick_links">
-                <ul>
-                    <li><a>Terms and conditions</a></li>
-                    <li><a href="/about_project">About Project</a></li>
-                    <li>Made by: <a href="https://github.com/Jerrell-Abrahams">Jerrell Abrahams</a></li>
-                </ul>
-            </div>
-            </div>
+      <div class="about_section">
+        <div class="left_side">
+          <img src="/images/email_illustration.jpg" alt="" />
         </div>
+        <div class="right_side">
+          <h1 class="about_heading">About</h1>
+          <p>
+            Writing a letter to your future self can be a great way to look back
+            on how your life has changed and find out if you're achieving the
+            goals you set for yourself.
+          </p>
+          <div class="buttons">
+            <a href="https://www.buymeacoffee.com/jerrellabrahams"
+              ><button class="donate_button">☕ Buy me a coffee</button></a
+            >
+            <a href="mailto:jerrellabrahams50@gmail.com"
+              ><button class="contact_button">Contact Us</button></a
+            >
+          </div>
+          <img class="stripe_badge" src="/images/stripe.svg" />
+          <div class="quick_links">
+            <ul>
+              <li><a>Terms and conditions</a></li>
+              <li><a href="/about_project">About Project</a></li>
+              <li>
+                Made by:
+                <a href="https://github.com/Jerrell-Abrahams"
+                  >Jerrell Abrahams</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
     <script defer src="../javascript/main.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

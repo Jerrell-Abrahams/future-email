@@ -10,15 +10,14 @@ privacy_toggle.setAttribute("value", "public");
 date.addEventListener("click", () => {
   for (let index = 0; index < button.length; index++) {
     button[index].classList.remove("selected");
-  }
-  submit_button.addEventListener("click", () => {
     submit_button.setAttribute("value", date.value);
-  });
+  }
 });
+
+// submit_button.addEventListener("click", () => {});
 
 function myFunction() {
   if (privacy_toggle.checked == true) {
-    console.log(privacy_toggle.getAttribute("value"));
     privacy_toggle.setAttribute("value", "private");
     privacy_label.innerHTML = "Private";
     privacy_label.setAttribute("title", "No one can see your letter or email");
@@ -32,11 +31,11 @@ function myFunction() {
   }
 }
 
-var addSelectClass = function () {
+var addSelectClass = function (e) {
   removeSelectClass();
-  this.classList.add("selected");
+  e.target.classList.add("selected");
 
-  submit_button.setAttribute("value", this.getAttribute("value"));
+  submit_button.setAttribute("value", e.target.value);
 };
 
 var removeSelectClass = function () {
